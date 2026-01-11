@@ -1,0 +1,154 @@
+body {
+  font-family: "Roboto", sans-serif;
+  scroll-margin: 20px;
+  background-color: rgb(143, 143, 143);
+}
+
+.chat-container {
+  box-sizing: border-box;
+  width: 437px;
+  height: 340px;
+  border-radius: 6px;
+  background: #fff;
+  word-break: break-all;
+}
+
+.messages-container {
+  height: 277px;
+  width: 437px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-right: 10px;
+}
+
+.message {
+  margin: 1px 0 0 20px;
+}
+
+.normal-message {
+  max-width: 60%;
+  /* border: 1px solid gray;
+  border-radius: 4px; */
+}
+
+.time-row {
+  min-width: 50px;
+}
+
+.message-bubble {
+  border: 1px solid #d3d9de;
+  padding: 10px;
+  border-radius: 6px;
+  /* Текст */
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 131%;
+  color: black; 
+}
+
+.gif-image {
+  border: 0.50px solid rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  /* Для адаптивного отображения изображений */
+  max-width: 352px;
+  max-height: 500px;
+  /* height: 220px;   */
+}
+
+.timestamp {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 131%;
+  color: #99a2ad;  
+}
+
+.input-container {
+  box-sizing: border-box;
+  border: 1px solid #dce1e5;
+  border-radius: 0 0 4px 6px;
+  padding: 13px 16px;
+  width: 437px;
+  height: 62px;
+  position: relative;
+}
+
+.text-input {
+  box-sizing: border-box;
+  border: 1px solid #d3d9de;
+  border-radius: 6px;
+  padding: 6px 12px;
+  width: 405px;
+  height: 36px;  
+}
+
+/* Без анимации фокуса для поля ввода */
+input[type=text]:focus{
+  outline: 0px solid #d3d9de;
+}
+
+.gif-menu {
+  position: absolute;
+  scroll-margin-right: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #fff;
+  border: 0px solid #d3d9de;
+  border-radius: 1px;
+  margin: 20px 15px;
+  width: 404px;
+  height: 248px;
+  z-index: 999;
+}
+
+/* Подствечиваемое /gif */
+.colored-gif-div {
+  top: 20.5px;
+  left: 27px;
+  position: absolute;
+  background-color: #fff;
+}
+
+.colored-gif {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 131%;
+  background: linear-gradient(135deg, #2ee6a8 0%, #39f 34.38%, #93f 69.27%, #f39 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+/* Тень на gif при наведении мышкой */
+a {
+  transition: transform 0.3s ease;
+}
+
+a:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Полоса прокрутки */
+
+::-webkit-scrollbar {
+  width: 20px; 
+}
+
+::-webkit-scrollbar-thumb {
+  border: 7px solid rgb(255, 255, 255); 
+  border-radius: 10px;
+  background-color: #dae2ea;
+  min-height: 91px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888888;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+ 
+}
